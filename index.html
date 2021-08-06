@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>F8 - Học lập trình để đi làm!</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/style/bootstrap.min.css" />
+        <link rel="stylesheet" href="./assets/style/style.css" />
+    </head>
+    <body>
+        <div id="app">
+            <header>
+                <div class="container">
+                    <nav>
+                        <div class="nav__left">
+                            <a href="#" class="nav_logo">
+                                <img
+                                    src="./assets/img/f8_text_logo.png"
+                                    alt="logo"
+                                />
+                            </a>
+                            <div class="nav-list">
+                                <div class="nav-list__item">
+                                    <a href="#">Trang chủ</a>
+                                </div>
+                                <div class="nav-list__item">
+                                    <a href="#">Khóa học</a>
+                                </div>
+                                <div class="nav-list__item">
+                                    <a href="#">Cộng đồng</a>
+                                    <ul class="nav-dropdown-list">
+                                        <li class="nav-dropdown-list__item">
+                                            <a href="#">F8 Official Channel</a>
+                                        </li>
+                                        <li class="nav-dropdown-list__item">
+                                            <a href="#">F8 Facebook Group</a>
+                                        </li>
+                                        <li class="nav-dropdown-list__item">
+                                            <a href="#">F8 tạo CV xin việc</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav__right">
+                            <div class="nav__avt">
+                                <img src="./assets/img/avt.jpg" alt="avatar" />
+                            </div>
+                            <div class="nav__user-name">Trần Đăng Quang</div>
+                            <div class="nav-notify">
+                                <div class="nav-notify-btn js-progress">
+                                    <i
+                                        class="
+                                            nav-notify-btn__icon
+                                            fas
+                                            fa-bookmark
+                                        "
+                                    ></i>
+                                    <div class="nav-notify-btn__tooltip">
+                                        Khóa học của tôi
+                                    </div>
+                                    <ul class="nav-right-dropdown">
+                                        <h6 class="nav-right-dropdown__heading">
+                                            Khóa học của tôi
+                                        </h6>
+                                        <div class="nav-right-dropdown__scroll">
+                                            <li class="course">
+                                                <div class="course__img">
+                                                    <img
+                                                        src="./assets/img/course/responsive.jpg"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="course-desc">
+                                                    <div
+                                                        class="
+                                                            course-desc__title
+                                                        "
+                                                    >
+                                                        Responsive Với Grid
+                                                        System
+                                                    </div>
+                                                    <div
+                                                        class="
+                                                            course-desc__time
+                                                        "
+                                                    >
+                                                        Học cách đây 13 giờ
+                                                        trước
+                                                    </div>
+                                                    <div
+                                                        class="
+                                                            course-desc__percent
+                                                        "
+                                                    >
+                                                        27%
+                                                    </div>
+                                                    <div
+                                                        class="
+                                                            course-desc__progress
+                                                        "
+                                                        style="--percent: 27%"
+                                                    ></div>
+                                                </div>
+                                            </li>
+                                            <li class="course">
+                                                <div class="course__img">
+                                                    <img
+                                                        src="./assets/img/course/responsive.jpg"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="course-desc">
+                                                    <div
+                                                        class="
+                                                            course-desc__title
+                                                        "
+                                                    >
+                                                        Responsive Với Grid
+                                                        System
+                                                    </div>
+                                                    <div
+                                                        class="
+                                                            course-desc__time
+                                                        "
+                                                    >
+                                                        Học cách đây 13 giờ
+                                                        trước
+                                                    </div>
+                                                    <div
+                                                        class="
+                                                            course-desc__percent
+                                                        "
+                                                    >
+                                                        55%
+                                                    </div>
+                                                    <div
+                                                        class="
+                                                            course-desc__progress
+                                                        "
+                                                        style="--percent: 55%"
+                                                    ></div>
+                                                </div>
+                                            </li>
+                                            <li class="course">
+                                                <div class="course__img">
+                                                    <img
+                                                        src="./assets/img/course/responsive.jpg"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="course-desc">
+                                                    <div
+                                                        class="
+                                                            course-desc__title
+                                                        "
+                                                    >
+                                                        Responsive Với Grid
+                                                        System
+                                                    </div>
+                                                    <div
+                                                        class="
+                                                            course-desc__time
+                                                        "
+                                                    >
+                                                        Học cách đây 13 giờ
+                                                        trước
+                                                    </div>
+                                                    <div
+                                                        class="
+                                                            course-desc__percent
+                                                        "
+                                                    >
+                                                        73%
+                                                    </div>
+                                                    <div
+                                                        class="
+                                                            course-desc__progress
+                                                        "
+                                                        style="--percent: 73%"
+                                                    ></div>
+                                                </div>
+                                            </li>
+                                            <li class="course">
+                                                <div class="course__img">
+                                                    <img
+                                                        src="./assets/img/course/responsive.jpg"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="course-desc">
+                                                    <div
+                                                        class="
+                                                            course-desc__title
+                                                        "
+                                                    >
+                                                        Responsive Với Grid
+                                                        System
+                                                    </div>
+                                                    <div
+                                                        class="
+                                                            course-desc__time
+                                                        "
+                                                    >
+                                                        Học cách đây 13 giờ
+                                                        trước
+                                                    </div>
+                                                    <div
+                                                        class="
+                                                            course-desc__percent
+                                                        "
+                                                    >
+                                                        73%
+                                                    </div>
+                                                    <div
+                                                        class="
+                                                            course-desc__progress
+                                                        "
+                                                        style="--percent: 73%"
+                                                    ></div>
+                                                </div>
+                                            </li>
+                                            <li class="course">
+                                                <div class="course__img">
+                                                    <img
+                                                        src="./assets/img/course/responsive.jpg"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="course-desc">
+                                                    <div
+                                                        class="
+                                                            course-desc__title
+                                                        "
+                                                    >
+                                                        Responsive Với Grid
+                                                        System
+                                                    </div>
+                                                    <div
+                                                        class="
+                                                            course-desc__time
+                                                        "
+                                                    >
+                                                        Học cách đây 13 giờ
+                                                        trước
+                                                    </div>
+                                                    <div
+                                                        class="
+                                                            course-desc__percent
+                                                        "
+                                                    >
+                                                        73%
+                                                    </div>
+                                                    <div
+                                                        class="
+                                                            course-desc__progress
+                                                        "
+                                                        style="--percent: 73%"
+                                                    ></div>
+                                                </div>
+                                            </li>
+                                            <li class="course">
+                                                <div class="course__img">
+                                                    <img
+                                                        src="./assets/img/course/responsive.jpg"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="course-desc">
+                                                    <div
+                                                        class="
+                                                            course-desc__title
+                                                        "
+                                                    >
+                                                        Responsive Với Grid
+                                                        System
+                                                    </div>
+                                                    <div
+                                                        class="
+                                                            course-desc__time
+                                                        "
+                                                    >
+                                                        Học cách đây 13 giờ
+                                                        trước
+                                                    </div>
+                                                    <div
+                                                        class="
+                                                            course-desc__percent
+                                                        "
+                                                    >
+                                                        73%
+                                                    </div>
+                                                    <div
+                                                        class="
+                                                            course-desc__progress
+                                                        "
+                                                        style="--percent: 73%"
+                                                    ></div>
+                                                </div>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
+                                <div class="nav-notify-btn js-notify">
+                                    <i
+                                        class="nav-notify-btn__icon fas fa-bell"
+                                    ></i>
+                                    <div class="nav-notify-btn__tooltip">
+                                        Thông báo
+                                    </div>
+                                    <ul class="dropdown-notify">
+                                        <h6 class="dropdown-notify-header">
+                                            <div class="notify-header__main">
+                                                Thông báo
+                                            </div>
+                                            <div class="notify-header__func">
+                                                Đánh dấu tất cả đã đọc
+                                            </div>
+                                        </h6>
+                                        <div class="dropdown-notify__scroll">
+                                            <li class="notify">
+                                                <div class="notify__img">
+                                                    <img
+                                                        src="./assets/img/f8_avatar.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="notify__message">
+                                                    <div
+                                                        class="
+                                                            notifice-message__main
+                                                        "
+                                                    >
+                                                        <div>
+                                                            Chào mừng Trần Đăng
+                                                            Quang đã gia nhập
+                                                            F8. Hãy luôn đam mê,
+                                                            kiên trì và theo bạn
+                                                            nhé ❤️Chào mừng Trần
+                                                            Đăng Quang đã gia
+                                                            nhập F8. Hãy luôn
+                                                            đam mê, kiên trì và
+                                                            theo bạn nhé ❤️Chào
+                                                            mừng Trần Đăng Quang
+                                                            đã gia nhập F8. Hãy
+                                                            luôn đam mê, kiên
+                                                            trì và theo bạn nhé
+                                                            ❤️Chào mừng Trần
+                                                            Đăng Quang đã gia
+                                                            nhập F8. Hãy luôn
+                                                            đam mê, kiên trì và
+                                                            theo bạn nhé ❤️
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="
+                                                            notifice-message__time
+                                                        "
+                                                    >
+                                                        10 tháng trước
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
+                                <div class="nav-notify-btn js-user">
+                                    <i
+                                        class="
+                                            nav-notify-btn__icon
+                                            fas
+                                            fa-sort-down
+                                        "
+                                    ></i>
+                                    <div class="nav-notify-btn__tooltip">
+                                        Cá nhân
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <div class="banner">
+                <video class="banner__video" autoplay muted loop>
+                    <source
+                        src="./assets/video/home-backdrop.mp4"
+                        type="video/mp4"
+                    />
+                </video>
+                <div class="banner__overlay"></div>
+                <div class="banner-content container">
+                    <h1 class="banner-content__heading">
+                        Học lập trình để đi làm!
+                    </h1>
+                    <h5 class="banner-content__desc">
+                        Trở thành lập trình viên nhà tuyển dụng luôn săn đón.
+                    </h5>
+                    <button class="btn">Học ngay</button>
+                </div>
+                <div class="banner__play">
+                    <i class="fas fa-play-circle"></i>
+                    <span> Xem video</span>
+                </div>
+            </div>
+            <section class="public-relation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-transition col-12 col-lg-4">
+                            <div class="public-relation">
+                                <div class="public-relation__img">
+                                    <img src="./assets/img/people.png" alt="" />
+                                </div>
+                                <div class="public-relation__desc">
+                                    <span>62.882+</span>
+                                    người đã tham gia
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-transition col-12 col-lg-4">
+                            <div class="public-relation">
+                                <div class="public-relation__img">
+                                    <img
+                                        src="./assets/img/courses.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="public-relation__desc">
+                                    <span>8+</span>
+                                    khóa học dành cho bạn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-transition col-12 col-lg-4">
+                            <div class="public-relation">
+                                <div class="public-relation__img">
+                                    <img
+                                        src="./assets/img/advantage.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="public-relation__desc">
+                                    Học bất cứ lúc nào, bất cứ nơi đâu
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="public-course">
+                <div class="container">
+                    <h2 class="public-course__heading">Khóa học nổi bật</h2>
+                    <h3 class="public-course__desc">
+                        <span>62.882+</span> người đã học và hàng nghìn trang
+                        web được tạo ra mỗi tháng
+                    </h3>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-4 col-sm-6">
+                            <a class="course-item" style="--progress: 75%">
+                                <div class="course-item__img"></div>
+                                <div class="course-item-body">
+                                    <div class="course-item-body__heading">
+                                        HTML, CSS từ Zero đến Hero
+                                    </div>
+                                    <div class="course-item-body__desc">
+                                        Trong khóa này chúng ta sẽ cùng nhau xây
+                                        dựng giao diện 2 trang web là The Band &
+                                        Shopee.
+                                    </div>
+                                    <div class="course-item-body__user">
+                                        <i class="fas fa-users"></i>
+                                        30.757
+                                    </div>
+                                </div>
+                                <div class="course-item__progress"></div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 col-sm-6">
+                            <a class="course-item" style="--progress: 75%">
+                                <div class="course-item__img"></div>
+                                <div class="course-item-body">
+                                    <div class="course-item-body__heading">
+                                        HTML, CSS từ Zero đến Hero
+                                    </div>
+                                    <div class="course-item-body__desc">
+                                        Trong khóa này chúng ta sẽ cùng nhau xây
+                                        dựng giao diện 2 trang web là The Band &
+                                        Shopee.
+                                    </div>
+                                    <div class="course-item-body__user">
+                                        <i class="fas fa-users"></i>
+                                        30.757
+                                    </div>
+                                </div>
+                                <div class="course-item__progress"></div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 col-sm-6">
+                            <a class="course-item" style="--progress: 75%">
+                                <div class="course-item__img"></div>
+                                <div class="course-item-body">
+                                    <div class="course-item-body__heading">
+                                        HTML, CSS từ Zero đến Hero
+                                    </div>
+                                    <div class="course-item-body__desc">
+                                        Trong khóa này chúng ta sẽ cùng nhau xây
+                                        dựng giao diện 2 trang web là The Band &
+                                        Shopee.
+                                    </div>
+                                    <div class="course-item-body__user">
+                                        <i class="fas fa-users"></i>
+                                        30.757
+                                    </div>
+                                </div>
+                                <div class="course-item__progress"></div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 col-sm-6">
+                            <a class="course-item" style="--progress: 75%">
+                                <div class="course-item__img"></div>
+                                <div class="course-item-body">
+                                    <div class="course-item-body__heading">
+                                        HTML, CSS từ Zero đến Hero
+                                    </div>
+                                    <div class="course-item-body__desc">
+                                        Trong khóa này chúng ta sẽ cùng nhau xây
+                                        dựng giao diện 2 trang web là The Band &
+                                        Shopee.
+                                    </div>
+                                    <div class="course-item-body__user">
+                                        <i class="fas fa-users"></i>
+                                        30.757
+                                    </div>
+                                </div>
+                                <div class="course-item__progress"></div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 col-sm-6">
+                            <a class="course-item" style="--progress: 75%">
+                                <div class="course-item__img"></div>
+                                <div class="course-item-body">
+                                    <div class="course-item-body__heading">
+                                        HTML, CSS từ Zero đến Hero
+                                    </div>
+                                    <div class="course-item-body__desc">
+                                        Trong khóa này chúng ta sẽ cùng nhau xây
+                                        dựng giao diện 2 trang web là The Band &
+                                        Shopee.
+                                    </div>
+                                    <div class="course-item-body__user">
+                                        <i class="fas fa-users"></i>
+                                        30.757
+                                    </div>
+                                </div>
+                                <div class="course-item__progress"></div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4 col-sm-6">
+                            <a class="course-item" style="--progress: 75%">
+                                <div class="course-item__img"></div>
+                                <div class="course-item-body">
+                                    <div class="course-item-body__heading">
+                                        HTML, CSS từ Zero đến Hero
+                                    </div>
+                                    <div class="course-item-body__desc">
+                                        Trong khóa này chúng ta sẽ cùng nhau xây
+                                        dựng giao diện 2 trang web là The Band &
+                                        Shopee.
+                                    </div>
+                                    <div class="course-item-body__user">
+                                        <i class="fas fa-users"></i>
+                                        30.757
+                                    </div>
+                                </div>
+                                <div class="course-item__progress"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="center">
+                        <button class="btn">Xem tất cả</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="down-banner">
+                <div class="down-banner__bkg"></div>
+                <!-- <img src="./assets/img/down-banner.png" class="down-banner__canvas"></img> -->
+                <div class="down-content container">
+                    <div class="down-content__heading">
+                        62.890+ người khác đã học. Còn bạn?
+                    </div>
+                    <div class="down-content__desc">
+                        "Đừng học lập trình. Nghiện đấy!”
+                    </div>
+                    <button class="btn btn--down-content">Thử một lần</button>
+                </div>
+            </section>
+
+            <section class="founder container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-12--custom">
+                        <img
+                            class="founder__img"
+                            src="./assets/img/founder.jpg"
+                            alt="Founder"
+                        />
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="founder-quote">
+                            <blockquote class="founder-qoute__blockquote">
+                                "... tôi làm việc bất kể ngày nghỉ, ngày lễ. Ở
+                                bất cứ đâu tôi có thể đặt chiếc máy tính của
+                                mình và tôi LUÔN TIN rằng tôi sẽ tạo ra được
+                                những sản phẩm tuyệt vời để CHIA SẺ với cộng
+                                đồng, đó là mục tiêu tôi luôn theo đuổi ..."
+                            </blockquote>
+                            <p class="founder-qoute__author">– Founder F8 –</p>
+                            <div class="btn btn--qoute">Tìm hiểu thêm</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="footer__logo"
+                                ><img
+                                    src="./assets/img/f8_text_logo.png"
+                                    alt="logo"
+                            /></a>
+                            <p class="footer__desc">
+                                F8 là nơi học lập trình miễn phí.
+                            </p>
+                            <p class="footer__desc">
+                                Các khoá học được đầu tư kỹ lưỡng từ nội dung
+                                tới chất lượng hình ảnh và âm thanh.
+                            </p>
+                            <p class="footer__desc">
+                                Học viên có thể học từ con số 0 tới khi trở
+                                thành lập trình viên chuyên nghiệp tại đây.
+                            </p>
+                            .
+                            <br />
+                            <p class="footer__desc">
+                                © 2019 MyCV JSC. All rights reserved.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-2">
+                            <div class="footer__headding">F8</div>
+                            <ul class="footer__more">
+                                <li><a href="#">Câu hỏi thường gặp</a></li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Donate</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-2">
+                            <div class="footer__headding">Sản phẩm</div>
+                            <ul class="footer__more">
+                                <li><a href="#">MyCV.vn</a></li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Fullstack.edu.vn</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2">
+                            <div class="footer__headding">Đối tác</div>
+                            <ul class="footer__more">
+                                <li><a href="#">Tải phần mềm Macbook</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="footer__headding">
+                                Theo dõi chúng tôi
+                            </div>
+                            <ul class="footer__more">
+                                <li>
+                                    Nhập email để đăng ký nhận những thông tin
+                                    hữu ích về học tập từ F8
+                                </li>
+                            </ul>
+                            <input
+                                type="email"
+                                placeholder="Email của bạn..."
+                                value=""
+                                class="footer__email"
+                            />
+                            <button class="btn btn--footer">Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
