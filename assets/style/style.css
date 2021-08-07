@@ -494,6 +494,7 @@ nav {
 }
 
 .btn:hover {
+    cursor: pointer;
     color: var(--white-color);
 }
 
