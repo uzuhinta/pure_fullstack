@@ -16,7 +16,8 @@ const bannerContent = $('.banner-content');
 
 // Handle header
 document.onscroll = function () {
-    let space = document.documentElement.scrollTop;
+    let space = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    console.log(space);
     if (space > 60) {
         header.style.backgroundColor = '#000';
         header.style.marginTop = '0';
