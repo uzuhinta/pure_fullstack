@@ -835,6 +835,7 @@ nav {
         /* display: none; */
     }
 
+    .notify-header__func,
     .nav_separate,
     .nav__user-name,
     .nav__avt,
@@ -844,6 +845,10 @@ nav {
 
     .nav-mobile {
         display: block;
+    }
+
+    .nav-notify-btn {
+        margin-left: 20px;
     }
 
     .user-dropdown,
@@ -898,9 +903,25 @@ nav {
         font-weight: 600;
     }
 
-    .user-info__close {
+    .user-dropdown .btn__close {
+        position: absolute;
+        top: 8px;
+        right: 15px;
         font-size: 16px;
         padding: 16px;
+    }
+
+    .dropdown-notify .btn__close,
+    .dropdown-notify .btn__close {
+        position: absolute;
+        top: -2px;
+        right: 6px;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .btn__close img {
+        height: 16px;
     }
 }
 

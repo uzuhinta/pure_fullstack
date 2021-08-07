@@ -2,7 +2,7 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 const header = $('header');
-const closeBtn = $('.user-info__close');
+const closeBtns = $$('.btn__close');
 const progressBtn = $('.js-progress');
 const progressDropdown = $('.nav-right-dropdown');
 const notifyBtn = $('.js-notify');
@@ -49,16 +49,14 @@ notifyBtn.onclick = function (event) {
     }
 };
 
-closeBtn.onclick = function (event) {
-    event.stopPropagation();
-    progressDropdown.style.display = 'none';
-    notifyDropdown.style.display = 'none';
-    if (userDropdown.style.display == 'block') {
+closeBtns.forEach((closeBtn) => {
+    closeBtn.onclick = function (event) {
+        event.stopPropagation();
+        progressDropdown.style.display = 'none';
+        notifyDropdown.style.display = 'none';
         userDropdown.style.display = 'none';
-    } else {
-        userDropdown.style.display = 'block';
-    }
-};
+    };
+});
 
 userBtn.onclick = function (event) {
     event.stopPropagation();
