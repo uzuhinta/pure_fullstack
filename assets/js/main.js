@@ -2,11 +2,13 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 const header = $('header');
+const closeBtn = $('.user-info__close');
 const progressBtn = $('.js-progress');
 const progressDropdown = $('.nav-right-dropdown');
 const notifyBtn = $('.js-notify');
 const notifyDropdown = $('.dropdown-notify');
 const userBtn = $('.js-user');
+const userDropdown = $('.user-dropdown');
 const playBtn = $('.banner__play ');
 const bannerOverlay = $('.banner__overlay');
 const bannerVideo = $('.banner__video');
@@ -26,18 +28,63 @@ document.onscroll = function () {
 
 // Handle nav right btn
 progressBtn.onclick = function (event) {
-    if (progressDropdown.style.display == 'none') {
-        progressDropdown.style.display = 'block';
-    } else {
+    event.stopPropagation();
+    notifyDropdown.style.display = 'none';
+    userDropdown.style.display = 'none';
+    if (progressDropdown.style.display == 'block') {
         progressDropdown.style.display = 'none';
+    } else {
+        progressDropdown.style.display = 'block';
     }
 };
+
 notifyBtn.onclick = function (event) {
-    if (notifyDropdown.style.display == 'none') {
-        notifyDropdown.style.display = 'block';
-    } else {
+    event.stopPropagation();
+    progressDropdown.style.display = 'none';
+    userDropdown.style.display = 'none';
+    if (notifyDropdown.style.display == 'block') {
         notifyDropdown.style.display = 'none';
+    } else {
+        notifyDropdown.style.display = 'block';
     }
+};
+
+closeBtn.onclick = function (event) {
+    event.stopPropagation();
+    progressDropdown.style.display = 'none';
+    notifyDropdown.style.display = 'none';
+    if (userDropdown.style.display == 'block') {
+        userDropdown.style.display = 'none';
+    } else {
+        userDropdown.style.display = 'block';
+    }
+};
+
+userBtn.onclick = function (event) {
+    event.stopPropagation();
+    progressDropdown.style.display = 'none';
+    notifyDropdown.style.display = 'none';
+    if (userDropdown.style.display == 'block') {
+        userDropdown.style.display = 'none';
+    } else {
+        userDropdown.style.display = 'block';
+    }
+};
+
+document.onclick = function () {
+    progressDropdown.style.display = 'none';
+    notifyDropdown.style.display = 'none';
+    userDropdown.style.display = 'none';
+};
+
+progressDropdown.onclick = function (event) {
+    event.stopPropagation();
+};
+notifyDropdown.onclick = function (event) {
+    event.stopPropagation();
+};
+userDropdown.onclick = function (event) {
+    event.stopPropagation();
 };
 
 // Handle Video
