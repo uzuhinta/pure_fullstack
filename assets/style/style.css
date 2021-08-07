@@ -95,6 +95,7 @@ nav {
 .nav-list__item {
     position: relative;
     padding: 14px 24px;
+    white-space: nowrap;
 }
 
 .nav-list__item a {
@@ -172,6 +173,7 @@ nav {
     color: var(--white-color);
     font-size: 14px;
     font-weight: 600;
+    white-space: nowrap;
     /* position: relative; */
 }
 
@@ -848,6 +850,11 @@ nav {
         display: none;
     }
 
+    .course-desc__title {
+        min-width: unset;
+        white-space: normal;
+    }
+
     .dropdown-notify__scroll,
     .nav-right-dropdown__scroll {
         max-height: calc(100vh - 64px);
@@ -860,6 +867,10 @@ nav {
 
     .nav-notify-btn {
         margin-left: 20px;
+    }
+
+    .nav-notify-btn__icon--hide-on-mobile {
+        display: none;
     }
 
     .user-dropdown,
@@ -937,6 +948,9 @@ nav {
 }
 
 @media (max-width: 767.98px) {
+    .nav-notify-btn {
+        margin: 0;
+    }
     .col-12--custom {
         padding: 0;
     }
@@ -944,6 +958,7 @@ nav {
     .founder-quote {
         margin-top: 20px;
     }
+
     .banner-content,
     .footer {
         text-align: center;
@@ -953,5 +968,10 @@ nav {
     .dropdown-notify,
     .nav-right-dropdown {
         width: 100%;
+    }
+
+    .banner-content__heading {
+        font-size: 38px;
+        line-height: 1.6;
     }
 }
