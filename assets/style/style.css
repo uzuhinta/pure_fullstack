@@ -911,7 +911,7 @@ nav {
         padding: 16px;
     }
 
-    .dropdown-notify .btn__close,
+    .nav-right-dropdown .btn__close,
     .dropdown-notify .btn__close {
         position: absolute;
         top: -2px;
