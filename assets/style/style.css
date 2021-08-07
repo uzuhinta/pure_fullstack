@@ -121,6 +121,7 @@ nav {
     opacity: 0;
     transform-origin: top left;
     transform: scaleY(0);
+    box-shadow: 0 13px 25px -12px rgb(0 0 0 / 25%);
 }
 
 .nav-list__item:hover .nav-dropdown-list {
@@ -592,6 +593,7 @@ nav {
     color: var(--text-color);
     border-radius: 12px;
     text-align: left;
+    cursor: pointer;
 }
 
 .course-item__img {
