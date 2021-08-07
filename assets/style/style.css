@@ -274,7 +274,7 @@ nav {
     align-items: center;
     height: 86px;
     padding: 8px 20px;
-    width: fit-content;
+    /* width: fit-content; */
     block-size: fit-content;
     transition: background-color 0.3s;
 }
@@ -288,10 +288,12 @@ nav {
 }
 
 .course__img img {
+    flex: 0;
     width: 90px;
 }
 
 .course-desc {
+    flex: 1;
     padding-left: 20px;
 }
 
@@ -844,6 +846,12 @@ nav {
     .nav__avt,
     .nav-list {
         display: none;
+    }
+
+    .dropdown-notify__scroll,
+    .nav-right-dropdown__scroll {
+        max-height: calc(100vh - 64px);
+        overflow-y: overlay;
     }
 
     .nav-mobile {
